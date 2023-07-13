@@ -1,0 +1,180 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url(fonts/Montserrat.ttf);
+}
+
+@font-face {
+  font-family: "Nunito";
+  src: url(fonts/Nunito.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat";
+}
+
+:root {
+  --green: #156963;
+  --black: #2c1500;
+  --lightgray: #f2f2f2;
+  --darkgray: #333333;
+  --hovergreen: #10504c;
+  --hoverlightgray: #ddf1e9;
+}
+
+.wrapper {
+  padding: 40px 56px;
+}
+
+.light {
+  color: var(--green);
+  background: #fff;
+}
+
+.green {
+  background: var(--green);
+  color: #fff;
+}
+
+/* header styles start */
+
+.header-wrapper {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-items {
+  display: flex;
+  align-items: center;
+}
+
+.header-items-svg-wrap {
+  display: flex;
+  justify-content: space-between;
+  width: 80px;
+  margin-right: 8px;
+}
+
+.header-item-svg {
+  width: 20px;
+  cursor: pointer;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.header-items-autorize {
+  height: 100%;
+}
+.sign-up,
+.sign-in {
+  height: 100%;
+  font-family: "Nunito";
+  font-weight: 600;
+  width: 111px;
+  font-size: 14px;
+  transition: 0.2s linear;
+}
+
+/* header styles end */
+
+/* top section styles start */
+
+.top-section {
+  display: flex;
+}
+
+.top-section-img {
+  height: 100vh;
+}
+
+.top-section-main {
+  position: relative;
+  padding: 0 72px 0 77px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+
+.top-section-main-title {
+  font-size: 68px;
+  color: var(--green);
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 24px;
+}
+
+.top-section-main-text {
+  color: var(--black);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+.top-section-button-wrap {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  cursor: pointer;
+}
+.top-section-btn {
+  width: 320px;
+  height: 160px;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-left: 49px;
+  transition: 0.2s linear;
+}
+
+.btn-description {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  opacity: 0.5;
+  margin-top: 40px;
+  margin-bottom: 13.5px;
+}
+.btn-description-dark {
+  color: var(--darkgray);
+  background: url(img/svg/arrow-left-dark.svg) no-repeat left center;
+  padding-left: 40px;
+}
+
+.btn-description-light {
+  color: var(--lightgray);
+  background: url(img/svg/arrow-right-light.svg) no-repeat 65px center;
+  padding-right: 40px;
+}
+
+/* top section styles end */
+
+/* Hovers */
+
+.green:hover {
+  background: var(--hovergreen);
+}
+
+.light:hover {
+  background: var(--hoverlightgray);
+}
