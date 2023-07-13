@@ -25,6 +25,7 @@ body {
   --darkgray: #333333;
   --hovergreen: #10504c;
   --hoverlightgray: #ddf1e9;
+  --lightborder: #E0E0E0;
 }
 
 .wrapper {
@@ -62,8 +63,8 @@ body {
 .header-items-svg-wrap {
   display: flex;
   justify-content: space-between;
-  width: 80px;
-  margin-right: 8px;
+  gap: 40px;
+  margin-right: 15px;
 }
 
 .header-item-svg {
@@ -85,7 +86,7 @@ button {
   height: 100%;
   font-family: "Nunito";
   font-weight: 600;
-  width: 111px;
+  padding: 8px 20px;
   font-size: 14px;
   transition: 0.2s linear;
 }
@@ -133,17 +134,18 @@ button {
   bottom: 0;
   left: 0;
   display: flex;
-  cursor: pointer;
+  width: 100%;
 }
 .top-section-btn {
-  width: 320px;
-  height: 160px;
+  padding: 39px 49px;
+  width: 50%;
   font-size: 32px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   padding-left: 49px;
   transition: 0.2s linear;
+  cursor: pointer;
 }
 
 .btn-description {
@@ -152,8 +154,7 @@ button {
   font-weight: 400;
   line-height: normal;
   opacity: 0.5;
-  margin-top: 40px;
-  margin-bottom: 13.5px;
+  margin-bottom: 12px;
 }
 .btn-description-dark {
   color: var(--darkgray);
@@ -169,6 +170,43 @@ button {
 
 /* top section styles end */
 
+
+/* section 2 styles start */
+.s2-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding-top: 100px;
+    gap: 32px;
+}
+
+.s2-card {
+    border: 1px solid var(--lightborder);
+    padding: 22px 16px 21px 16px;
+}
+
+.s2-card-title {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.s2-card-title-svg {
+
+}
+
+.s2-card-title-text {
+    color: var(--green);
+}
+
+.s2-card-p {
+
+}
+
+
+/* section 2 styles end */
+
+
 /* Hovers */
 
 .green:hover {
@@ -177,4 +215,80 @@ button {
 
 .light:hover {
   background: var(--hoverlightgray);
+}
+
+
+@media screen and (max-width: 1250px) {
+
+    .wrapper {
+        padding: 40px 15px;
+    }
+    /* Header media */
+
+    /* Header media */
+
+    /* top section media */
+   .top-section {
+    flex-wrap: wrap;
+   }
+   .top-section-main {
+    justify-content: start;
+    height: fit-content;
+    padding: 0;
+   }
+   .top-section-img-wrap {
+    margin: 0 auto;
+   }
+   .top-section-img {
+    max-width: 100vw;
+    height: auto;
+   }
+    .top-section-main-title {
+        font-size: 35px;
+        margin-top: 25px;
+    }
+
+    .top-section-main-text {
+        font-size: 18px;
+    }
+
+    .top-section-main-title, .top-section-main-text {
+        padding: 0 20px;
+    }
+
+    .top-section-button-wrap {
+        position: relative;
+        margin-top: 25px;
+    }
+
+    .top-section-btn {
+        padding: 25px 30px;
+    }
+    /* top section media */
+
+
+    /* section 2 media */
+    .s2-card {
+        grid-column: span 2;
+    }
+
+    .s2-cards {
+        padding-top: 50px;
+    }
+    /* section 2 media */
+}
+
+@media screen and (max-width: 550px) {
+    .top-section-btn {
+        padding: 10px 15px;
+        font-size: 18px;
+    }
+
+    .btn-description {
+        font-size: 18px;
+    }
+
+    .s2-card {
+        grid-column: span 4;
+    }
 }
