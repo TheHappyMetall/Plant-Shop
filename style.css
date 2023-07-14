@@ -23,9 +23,9 @@ body {
   --black: #2c1500;
   --lightgray: #f2f2f2;
   --darkgray: #333333;
-  --hovergreen: #10504c;
-  --hoverlightgray: #ddf1e9;
-  --lightborder: #E0E0E0;
+  --hovergreen: #10502d;
+  --hoverlightgray: #ddf1e2;
+  --lightborder: #e0e0e0;
 }
 
 .wrapper {
@@ -170,42 +170,74 @@ button {
 
 /* top section styles end */
 
-
 /* section 2 styles start */
 .s2-cards {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    padding-top: 100px;
-    gap: 32px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding-top: 100px;
+  gap: 32px;
 }
 
 .s2-card {
-    border: 1px solid var(--lightborder);
-    padding: 22px 16px 21px 16px;
+  border: 1px solid var(--lightborder);
+  padding: 30px;
 }
 
 .s2-card-title {
-    display: flex;
-    gap: 16px;
-    align-items: center;
-    margin-bottom: 16px;
-}
-
-.s2-card-title-svg {
-
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 16px;
 }
 
 .s2-card-title-text {
-    color: var(--green);
+  color: var(--green);
 }
-
-.s2-card-p {
-
-}
-
 
 /* section 2 styles end */
 
+/* section 3 styles start */
+
+.s3-title-cont {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--lightborder);
+  padding-bottom: 20px;
+}
+
+.s3-title {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.select {
+  padding: 8px 12px;
+  font-size: 12px;
+  font-weight: 500;
+  border: 1px solid var(--lightborder);
+}
+
+.s3-plant-cards {
+  display: flex;
+  justify-content: space-around;
+}
+
+.s3-plant-card {
+  text-align: center;
+}
+
+.s3-plant-img {
+  margin-bottom: 16px;
+}
+
+.s3-plant-name {
+  margin-bottom: 8px;
+}
+
+.s3-plant-price {
+  font-weight: 600;
+}
+/* section 3 styles end */
 
 /* Hovers */
 
@@ -217,78 +249,106 @@ button {
   background: var(--hoverlightgray);
 }
 
-
 @media screen and (max-width: 1250px) {
+  .wrapper {
+    padding: 40px 15px;
+  }
+  /* Header media */
 
-    .wrapper {
-        padding: 40px 15px;
-    }
-    /* Header media */
+  /* Header media */
 
-    /* Header media */
+  /* top section media */
 
-    /* top section media */
-   .top-section {
+  .top-section-main {
+    height: auto;
+    width: 50vw;
+  }
+
+  .top-section-img {
+    height: auto;
+    width: 50vw;
+  }
+
+  .top-section-main-title {
+    font-size: 35px;
+    margin-top: 25px;
+  }
+
+  .top-section-main-text {
+    font-size: 18px;
+  }
+
+  .top-section-main-title,
+  .top-section-main-text {
+    padding: 0 20px;
+  }
+
+  .top-section-btn {
+    padding: 25px 30px;
+    font-size: 24px;
+  }
+
+  .btn-description {
+    font-size: 16px;
+  }
+  /* top section media */
+
+  /* section 2 media */
+  .s2-cards {
+    padding-top: 50px;
+    gap: 15px;
+  }
+
+  .s2-card {
+    grid-column: span 2;
+  }
+  /* section 2 media */
+
+  /* section 3 media */
+  .s3-plant-cards {
+    gap: 10px;
     flex-wrap: wrap;
-   }
-   .top-section-main {
+  }
+  /* section 3 media */
+}
+
+@media screen and (max-width: 900px) {
+  .top-section {
+    flex-wrap: wrap;
+  }
+  .top-section-main {
     justify-content: start;
     height: fit-content;
     padding: 0;
-   }
-   .top-section-img-wrap {
+    width: 100vw;
+  }
+
+  .top-section-img-wrap {
     margin: 0 auto;
-   }
-   .top-section-img {
-    max-width: 100vw;
+  }
+  .top-section-img {
+    width: 100vw;
     height: auto;
-   }
-    .top-section-main-title {
-        font-size: 35px;
-        margin-top: 25px;
-    }
+  }
 
-    .top-section-main-text {
-        font-size: 18px;
-    }
+  .top-section-button-wrap {
+    position: relative;
+    margin-top: 25px;
+  }
+  .top-section-btn {
+    padding: 10px 15px;
+    font-size: 18px;
+  }
 
-    .top-section-main-title, .top-section-main-text {
-        padding: 0 20px;
-    }
+  .btn-description {
+    font-size: 18px;
+  }
 
-    .top-section-button-wrap {
-        position: relative;
-        margin-top: 25px;
-    }
-
-    .top-section-btn {
-        padding: 25px 30px;
-    }
-    /* top section media */
-
-
-    /* section 2 media */
-    .s2-card {
-        grid-column: span 2;
-    }
-
-    .s2-cards {
-        padding-top: 50px;
-    }
-    /* section 2 media */
+  .s2-card {
+    grid-column: span 4;
+  }
 }
 
-@media screen and (max-width: 550px) {
-    .top-section-btn {
-        padding: 10px 15px;
-        font-size: 18px;
-    }
-
-    .btn-description {
-        font-size: 18px;
-    }
-
-    .s2-card {
-        grid-column: span 4;
-    }
+@media screen and (max-width: 450px) {
+  /* header hdn */
 }
