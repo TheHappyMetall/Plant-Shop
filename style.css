@@ -239,6 +239,52 @@ button {
 }
 /* section 3 styles end */
 
+/* section 4 styles start */
+.section-4 {
+  display: flex;
+}
+
+.s4-left-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+width: 50%;
+  
+}
+
+.s4-text-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+}
+
+.s4-text-title {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 56px; 
+  color: var(--black);
+  margin-bottom: 16px;
+}
+
+.s4-text-text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px; 
+  color: var(--black);
+}
+
+.s4-big-img {
+  width: 50%;
+}
+
+.s4-bottom-img {
+  width: 100%;
+}
+/* section 4 styles end */
+
 /* Hovers */
 
 .green:hover {
@@ -295,7 +341,7 @@ button {
 
   /* section 2 media */
   .s2-cards {
-    padding-top: 50px;
+    padding-top: 0;
     gap: 15px;
   }
 
@@ -310,9 +356,16 @@ button {
     flex-wrap: wrap;
   }
   /* section 3 media */
+
+  /* section 4 media */
+.s4-text-title {
+  font-size: 28px;
+}
+    /* section 4 media */
 }
 
 @media screen and (max-width: 900px) {
+  /* top section media */
   .top-section {
     flex-wrap: wrap;
   }
@@ -343,10 +396,23 @@ button {
   .btn-description {
     font-size: 18px;
   }
+  /* sop section media */
 
+  /* section 2 media */
   .s2-card {
     grid-column: span 4;
   }
+  /* section 2 media */
+/* section 4 media */
+.s4-text-title {
+  font-size: 22px;
+}
+  .s4-text-text {
+  font-size: 14px;
+  }
+/* section 4 media */
+
+
 }
 
 @media screen and (max-width: 450px) {
