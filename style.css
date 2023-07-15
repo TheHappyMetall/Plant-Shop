@@ -41,6 +41,7 @@ body {
   --hovergreen: #10502d;
   --hoverlightgray: #ddf1e2;
   --lightborder: #e0e0e0;
+  --bg: #f3f4f6;;
 }
 
 button {
@@ -259,6 +260,7 @@ a {
 
 .s3-plant-img {
   margin-bottom: 16px;
+  background-color: var(--bg);
 }
 
 .s3-plant-name {
@@ -325,6 +327,7 @@ a {
 .section-5 {
   display: flex;
   justify-content: space-between;
+  background-color: var(--bg);
 }
 
 .s5-text {
@@ -417,7 +420,8 @@ a {
   border: none;
   padding: 8px 13px;
   margin-bottom: 14px;
-  background: var(--lightborder);
+  border: 1px solid var(--lightgray);
+  border-radius: 2px;
 }
 
 .footer-button {
@@ -575,6 +579,12 @@ a {
   }
   /* section 2 media */
 
+  /* section 3 media */
+  .s3-plant-cards {
+    padding-top: 40px;
+  }
+  /* section 3 media */
+
   /* section 4 media */
   .s4-text-title {
     font-size: 22px;
@@ -622,6 +632,7 @@ a {
 
   /* section 5 media */
   .section-5 {
+    padding-top: 80px;
     flex-wrap: wrap;
   }
   .s5-text {
