@@ -42,6 +42,13 @@ body {
   color: #fff;
 }
 
+.section-button {
+  padding: 10px 40px;
+  font-family: Nunito;
+  font-size: 14px;
+  font-weight: 700;
+}
+
 /* header styles start */
 
 .header-wrapper {
@@ -84,7 +91,7 @@ button {
 .sign-up,
 .sign-in {
   height: 100%;
-  font-family: "Nunito";
+  font-family: Nunito;
   font-weight: 600;
   padding: 8px 20px;
   font-size: 14px;
@@ -290,6 +297,37 @@ button {
 }
 /* section 4 styles end */
 
+/* section 5 styles start */
+.section-5 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.s5-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  padding-left: 97px;
+}
+
+.s5-text-title {
+  padding-bottom: 32px;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 56px;
+  color: var(--black);
+}
+
+.s5-img-cont {
+  width: 60%;
+}
+
+.s5-img {
+  width: 100%;
+}
+/* section 5 styles end */
+
 /* Hovers */
 
 .green:hover {
@@ -371,9 +409,22 @@ button {
     line-height: 24px;
   }
   /* section 4 media */
+
+  /* section 5 media */
+  .s5-text {
+    padding-left: 67px;
+  }
+  .s5-text-title {
+    font-size: 32px;
+    line-height: 45px;
+  }
+  /* section 5 media */
 }
 
 @media screen and (max-width: 900px) {
+  .footer-wrapper {
+    padding: 0 40px;
+  }
   /* top section media */
   .top-section {
     flex-wrap: wrap;
@@ -412,7 +463,7 @@ button {
     grid-column: span 4;
   }
   /* section 2 media */
-  
+
   /* section 4 media */
   .s4-text-title {
     font-size: 22px;
@@ -421,6 +472,20 @@ button {
     font-size: 14px;
   }
   /* section 4 media */
+
+  /* section 5 media */
+  .s5-text {
+    width: 50%;
+    padding-left: 5vh;
+  }
+  .s5-text-title {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .s5-img-cont {
+    width: 50%;
+  }
+  /* section 5 media */
 }
 
 @media screen and (max-width: 732px) {
@@ -443,10 +508,27 @@ button {
     width: 100vw;
   }
   /* section 4 media */
+
+  /* section 5 media */
+  .section-5 {
+    flex-wrap: wrap;
+  }
+  .s5-text {
+    width: 100%;
+    padding-left: 0;
+    text-align: center;
+  }
+  .s5-text-title {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .s5-img-cont {
+    margin-top: 80px;
+    width: 100%;
+  }
+  /* section 5 media */
 }
 
 @media screen and (max-width: 450px) {
   /* header hdn */
-
-
 }
