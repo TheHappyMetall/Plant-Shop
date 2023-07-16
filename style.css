@@ -453,6 +453,9 @@ a {
   .wrapper {
     padding: 40px 15px;
   }
+  .header-wrapper > .wrapper {
+    padding: 15px 15px;
+  }
   /* Header media */
 
   /* Header media */
