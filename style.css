@@ -252,6 +252,7 @@ a {
 .s3-plant-cards {
   display: flex;
   justify-content: space-around;
+  padding-top: 24px;
 }
 
 .s3-plant-card {
@@ -587,12 +588,6 @@ a {
     grid-column: span 4;
   }
   /* section 2 media */
-
-  /* section 3 media */
-  .s3-plant-cards {
-    padding-top: 40px;
-  }
-  /* section 3 media */
 
   /* section 4 media */
   .s4-text-title {
